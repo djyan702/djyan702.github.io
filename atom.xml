@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://djyan702.github.io</id>
+    <title>djyan702</title>
+    <updated>2021-04-15T02:13:56.117Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://djyan702.github.io"/>
+    <link rel="self" href="https://djyan702.github.io/atom.xml"/>
+    <subtitle>test</subtitle>
+    <logo>https://djyan702.github.io/images/avatar.png</logo>
+    <icon>https://djyan702.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, djyan702</rights>
+</feed>
