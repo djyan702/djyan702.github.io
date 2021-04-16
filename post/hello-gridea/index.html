@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://djyan702.github.io/favicon.ico?v=1618452828214">
+<link rel="shortcut icon" href="https://djyan702.github.io/favicon.ico?v=1618539794291">
 <link rel="stylesheet" href="https://djyan702.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -35,7 +41,7 @@ Gridea 主页
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://djyan702.github.io">
-        <img src="https://djyan702.github.io/images/avatar.png?v=1618452828214" class="site-logo">
+        <img src="https://djyan702.github.io/images/avatar.png?v=1618539794291" class="site-logo">
         <h1 class="site-title">djyan702</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -143,6 +149,12 @@ Gridea 主页
             
 
             
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
 
           </div>
 
@@ -165,6 +177,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '58b373a952da23104cbb',
+        clientSecret: '795394270f18ef925aa4b9cce8c9e7062c77ab89',
+        repo: 'djyan702.github.io',
+        owner: 'djyan702',
+        admin: ['djyan702'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
